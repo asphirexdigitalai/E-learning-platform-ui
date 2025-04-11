@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eLearn Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">eLearnX</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-blue-500">Home</a>
+      <a href="#" class="hover:text-blue-500">Courses</a>
+      <a href="#" class="hover:text-blue-500">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white text-center py-20 px-6">
+    <h2 class="text-4xl font-bold mb-4">Learn Anything, Anytime, Anywhere</h2>
+    <p class="mb-6">Join thousands of learners and boost your skills today!</p>
+    <button onclick="scrollToCourses()" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded hover:bg-gray-200 transition">
+      Explore Courses
+    </button>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="p-6">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Popular Courses</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded-lg p-4 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Python Basics</h4>
+        <p class="text-sm text-gray-600 mb-4">Master the fundamentals with easy tutorials.</p>
+        <button class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+      </div>
+      <div class="bg-white shadow rounded-lg p-4 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">AI for Beginners</h4>
+        <p class="text-sm text-gray-600 mb-4">Start your AI journey with interactive lessons.</p>
+        <button class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+      </div>
+      <div class="bg-white shadow rounded-lg p-4 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Web Development</h4>
+        <p class="text-sm text-gray-600 mb-4">Build modern websites with HTML, CSS, and JS.</p>
+        <button class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enroll Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center text-sm text-gray-600 p-4 mt-10 border-t">
+    © 2025 eLearnX. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToCourses() {
+      document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
